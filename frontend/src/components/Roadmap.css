@@ -1,0 +1,9 @@
+.roadmap { margin-top: 56px; overflow-x: auto; padding-bottom: 12px; }
+.roadmap__track { display: grid; grid-auto-flow: column; grid-auto-columns: 230px; gap: 0; position: relative; }
+.roadmap__track::before { content: ""; position: absolute; top: 17px; left: 0; right: 0; height: 1px; background: rgba(23, 17, 13, 0.15); }
+
+.rm { position: relative; padding: 0 22px 0 0; }
+.rm__dot { width: 34px; height: 34px; border-radius: 50%; background: var(--crema); border: 2px solid var(--carbon); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-weight: 700; font-size: 12px; position: relative; z-index: 2; }
+.rm.is-now .rm__dot { background: var(--naranja); border-color: var(--naranja); color: var(--carbon-hondo); }
+.rm h3 { font-size: 15.5px; margin-top: 16px; margin-bottom: 6px; font-family: var(--font-body); font-weight: 800; }
+.rm p { font-size: 13.5px; color: rgba(23, 17, 13, 0.65); }

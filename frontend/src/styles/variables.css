@@ -1,0 +1,22 @@
+:root {
+  /* Paleta Al Punto (real) */
+  --carbon: #17110D;
+  --carbon-hondo: #0C0908;
+  --carbon-80: rgba(23, 17, 13, 0.8);
+  --crema: #FBF2E4;
+  --crema-70: rgba(251, 242, 228, 0.72);
+  --crema-40: rgba(251, 242, 228, 0.4);
+  --crema-14: rgba(251, 242, 228, 0.14);
+  --naranja: #FF6A1A;
+  --naranja-16: rgba(255, 106, 26, 0.16);
+  --rojo: #D62B1F;
+  --verde: #4E9A2F;
+  --verde-16: rgba(78, 154, 47, 0.16);
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --maxw: 1180px;
+  --radius: 22px;
+}

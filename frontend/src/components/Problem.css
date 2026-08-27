@@ -1,0 +1,13 @@
+.problema__grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; margin-top: 44px; }
+.problema__grid h2 { font-size: clamp(28px, 3.4vw, 40px); max-width: 14ch; }
+
+.problema__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.problema__list li { display: grid; grid-template-columns: 52px 1fr; gap: 20px; padding: 26px 0; border-top: 1px solid rgba(23, 17, 13, 0.12); }
+.problema__list li:last-child { border-bottom: 1px solid rgba(23, 17, 13, 0.12); }
+.problema__list .n { font-family: var(--font-mono); font-size: 13px; color: var(--rojo); font-weight: 700; padding-top: 3px; }
+.problema__list h3 { font-family: var(--font-body); font-weight: 800; font-size: 16.5px; margin-bottom: 6px; }
+.problema__list p { color: rgba(23, 17, 13, 0.68); font-size: 15px; }
+
+@media (max-width: 900px) {
+  .problema__grid { grid-template-columns: 1fr; gap: 28px; }
+}

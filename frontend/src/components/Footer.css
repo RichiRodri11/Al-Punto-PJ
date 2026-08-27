@@ -1,0 +1,25 @@
+footer { background: var(--carbon); color: var(--crema-40); padding: 56px 0 34px; }
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(251, 242, 228, 0.1);
+}
+
+.footer__brand { display: flex; align-items: center; gap: 12px; }
+.footer__brand svg { width: 30px; height: 30px; }
+.footer__brand span { font-family: var(--font-display); font-weight: 900; font-size: 18px; color: var(--crema); }
+.footer__brand span em { font-style: normal; color: var(--naranja); }
+
+.footer__links { display: flex; gap: 48px; flex-wrap: wrap; }
+.footer__col h4 { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--crema-40); margin-bottom: 14px; }
+.footer__col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.footer__col a { font-size: 14px; color: var(--crema-70); }
+.footer__col a:hover { color: var(--naranja); }
+
+.footer__bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; padding-top: 26px; font-size: 12.5px; }
+.footer__legal { max-width: 60ch; }

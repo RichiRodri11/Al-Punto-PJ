@@ -1,0 +1,32 @@
+.cert { display: grid; grid-template-columns: .95fr 1.05fr; gap: 64px; align-items: center; }
+.cert h2 { font-size: clamp(28px, 3.4vw, 40px); color: var(--crema); max-width: 15ch; }
+.cert p { color: var(--crema-70); margin-top: 18px; font-size: 15.5px; max-width: 52ch; }
+
+.cert__note {
+  margin-top: 26px; padding: 16px 18px; border-radius: 14px; background: rgba(255, 106, 26, 0.08);
+  border: 1px solid rgba(255, 106, 26, 0.25); font-size: 13.5px; color: var(--crema-70);
+}
+.cert__note b { color: var(--naranja); }
+
+.certificate { background: var(--crema); color: var(--carbon); border-radius: 18px; padding: 32px; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.55); position: relative; }
+.certificate__top { display: flex; justify-content: space-between; align-items: flex-start; }
+.certificate__top .eyebrow { color: var(--rojo); }
+.certificate__folio { font-family: var(--font-mono); font-size: 10.5px; color: rgba(23, 17, 13, 0.45); text-align: right; }
+.certificate__qr {
+  width: 56px; height: 56px; border-radius: 10px; margin-top: 6px;
+  background:
+    repeating-linear-gradient(90deg, var(--carbon) 0 4px, transparent 4px 8px),
+    repeating-linear-gradient(0deg, var(--carbon) 0 4px, transparent 4px 8px);
+  background-blend-mode: multiply; background-color: var(--crema); opacity: 0.85;
+}
+.certificate h3 { font-family: var(--font-display); font-size: 26px; margin: 22px 0 4px; }
+.certificate .curso { font-family: var(--font-display); font-style: italic; font-size: 20px; color: var(--rojo); }
+.certificate__meta { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; margin-top: 26px; padding-top: 22px; border-top: 1px dashed rgba(23, 17, 13, 0.2); }
+.certificate__meta div span { display: block; font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(23, 17, 13, 0.45); margin-bottom: 3px; }
+.certificate__meta div b { font-size: 14.5px; }
+.certificate__valid { margin-top: 20px; display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: #356b1f; }
+.certificate__valid .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--verde); }
+
+@media (max-width: 900px) {
+  .cert { grid-template-columns: 1fr; }
+}
