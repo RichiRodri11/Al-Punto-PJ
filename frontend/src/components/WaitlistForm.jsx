@@ -99,9 +99,18 @@ export default function WaitlistForm() {
           {role === 'instructor' && (
             <div className="field field--especialidad is-visible">
               <label htmlFor="especialidad">Especialidad</label>
-              <select id="especialidad" name="especialidad" value={form.especialidad} onChange={handleChange}>
-                {ESPECIALIDADES.map((op) => (
-                  <option key={op.value} value={op.value}>{op.label}</option>
+
+              <select
+                id="especialidad"
+                name="especialidad"
+                value={form.especialidad}
+                onChange={handleChange}
+                className="select-especialidad"
+              >
+                {ESPECIALIDADES.map(({ value, label }) => (
+                  <option key={value} value={value}>
+                    {label}
+                  </option>
                 ))}
               </select>
             </div>
